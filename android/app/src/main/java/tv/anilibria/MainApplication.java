@@ -1,4 +1,4 @@
-package com.anilibriatv;
+package tv.anilibria;
 
 import android.app.Application;
 import android.content.Context;

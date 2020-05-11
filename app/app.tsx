@@ -9,6 +9,10 @@ import { NavigationContainerRef } from "@react-navigation/native"
 import { contains } from "ramda"
 import { enableScreens } from "react-native-screens"
 import { SafeAreaProvider, initialWindowSafeAreaInsets } from "react-native-safe-area-context"
+import codePush from 'react-native-code-push'
+import crashlytics from '@react-native-firebase/crashlytics'
+import remoteConfig from '@react-native-firebase/remote-config'
+import DeviceInfo from 'react-native-device-info'
 
 import { RootNavigator, exitRoutes, setRootNavigation } from "./navigation"
 import { useBackButtonHandler } from "./navigation/use-back-button-handler"
@@ -41,10 +45,41 @@ const canExit = (routeName: string) => contains(routeName, exitRoutes)
 
 export const NAVIGATION_PERSISTENCE_KEY = "NAVIGATION_STATE"
 
+crashlytics().setAttribute('uuid', DeviceInfo.getUniqueId())
+
+const getRemoteConfig = async (defaults: Record<string, any> = {}) => {
+  await remoteConfig().setConfigSettings({
+    isDeveloperModeEnabled: __DEV__,
+    minimumFetchInterval: 300
+  })
+  await remoteConfig().setDefaults(defaults)
+  const activated = await remoteConfig().fetchAndActivate()
+  if (!activated) console.log('Remote Config not activated')
+  const config = remoteConfig().getAll()
+  const configProps: typeof defaults = {}
+
+  Object.keys(config).forEach(c => {
+    configProps[c] = config[c].value
+  })
+
+  return configProps
+}
+
+const channels = {
+  staging: '',
+  stable: ''
+}
+
+const selectChannel = (channel: keyof typeof channels) => {
+  codePush.sync({ deploymentKey: channel })
+  crashlytics().setAttribute('channel', channel)
+}
+
 /**
  * This is the root component of our app.
  */
 const App: React.FunctionComponent<{}> = () => {
+  const [isLoaded, setIsLoaded] = useState(false)
   const navigationRef = useRef<NavigationContainerRef>()
   const [rootStore, setRootStore] = useState<RootStore | undefined>(undefined)
   const [initialNavigationState, setInitialNavigationState] = useState()
@@ -99,6 +134,26 @@ const App: React.FunctionComponent<{}> = () => {
     }
   }, [isRestoringNavigationState])
 
+  useEffect(() => {
+    (async () => {
+      try {
+        const config = await getRemoteConfig({
+          channels
+        })
+        const channel = await storage.loadString('channel')
+        if (Object.prototype.hasOwnProperty.call(config.channels, channel)) {
+          selectChannel(channel as keyof typeof channels)
+        } else {
+          selectChannel('stable')
+        }
+      } catch (e) {
+        selectChannel('stable')
+      } finally {
+        setIsLoaded(true)
+      }
+    })()
+  }, [])
+
   // Before we show the app, we have to wait for our state to be ready.
   // In the meantime, don't render anything. This will be the background
   // color set in native by rootView's background color.
@@ -107,7 +162,7 @@ const App: React.FunctionComponent<{}> = () => {
   //
   // You're welcome to swap in your own component to render if your boot up
   // sequence is too slow though.
-  if (!rootStore) {
+  if (!rootStore && !isLoaded) {
     return null
   }
 

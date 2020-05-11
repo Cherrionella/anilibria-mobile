@@ -1,4 +1,4 @@
-package com.anilibriatv;
+package tv.anilibria;
 
 import com.facebook.react.ReactActivity;
 
