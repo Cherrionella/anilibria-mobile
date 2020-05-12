@@ -72,3 +72,22 @@ export function getGeneralApiProblem(response: ApiResponse<any>): GeneralApiProb
 
   return null
 }
+
+export const detectApiProblem = (response: ApiResponse<any>): GeneralApiProblem | void => {
+  // the typical ways to die when calling an api
+  if (!response.ok) {
+    const problem = getGeneralApiProblem(response)
+    if (problem) return problem
+  }
+
+  if (!response.data.status) {
+    const problem = getGeneralApiProblem({
+      ...response,
+      status: response.data.error.code,
+      problem: "CLIENT_ERROR"
+    } as ApiResponse<any>)
+    if (problem) return problem
+  }
+
+  return null
+}

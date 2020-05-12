@@ -1,10 +1,11 @@
 import { ApisauceInstance, create, ApiResponse, ApisauceConfig } from "apisauce"
-import { getGeneralApiProblem } from "./api-problem"
+import { detectApiProblem, getGeneralApiProblem } from "./api-problem"
 import { ApiConfig, DEFAULT_API_CONFIG } from "./api-config"
 import * as Types from "./api.types"
 import { serializeData } from "../../utils/serializeData"
 import { flatten, mergeAll } from "ramda"
-const { APP_ID, APP_VERSION } = require("../../config/env")
+import { convertAnime, convertAnimeList } from "./api.convert"
+const { APP_ID, APP_VERSION, PER_PAGE } = require("../../config/env")
 
 /**
  * Manages all requests to the API.
@@ -58,22 +59,27 @@ export class Api {
     // make the api call
     const response: ApiResponse<any> = await this.apisauce.post('/index.php', serializeData({ query: 'config' }))
 
-    // the typical ways to die when calling an api
-    if (!response.ok) {
-      const problem = getGeneralApiProblem(response)
-      if (problem) return problem
-    }
-
-    if (!response.data.status) {
-      const problem = getGeneralApiProblem({
-        ...response,
-        status: response.data.error.code,
-        problem: "CLIENT_ERROR"
-      } as ApiResponse<any>)
-      if (problem) return problem
-    }
+    const problem = detectApiProblem(response)
+    if (problem) return problem
 
     return { kind: "ok", data: response.data }
+  }
+
+  async listAnime(page = 1, perPage: number = PER_PAGE): Promise<Types.GetListAnimeResult> {
+    const req = { query: 'list', perPage, page }
+    // make the api call
+    const response: ApiResponse<any> = await this.apisauce.post('/index.php', serializeData(req))
+
+    const problem = detectApiProblem(response)
+    if (problem) return problem
+
+    try {
+      const rawAnimeList = response.data.data
+      const resultAnime = convertAnimeList(rawAnimeList)
+      return { kind: "ok", data: resultAnime }
+    } catch {
+      return { kind: "bad-data" }
+    }
   }
 
   /**
