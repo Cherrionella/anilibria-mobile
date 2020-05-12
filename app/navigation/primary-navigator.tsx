@@ -1,7 +1,7 @@
 import React from "react"
 
 import { createNativeStackNavigator } from "react-native-screens/native-stack"
-import { WelcomeScreen, DemoScreen } from "../screens"
+import { MainScreen } from "../screens"
 import { PrimaryParamList } from "./types"
 
 const Stack = createNativeStackNavigator<PrimaryParamList>()
@@ -14,8 +14,7 @@ export function PrimaryNavigator() {
         gestureEnabled: true,
       }}
     >
-      <Stack.Screen name="welcome" component={WelcomeScreen} />
-      <Stack.Screen name="demo" component={DemoScreen} />
+      <Stack.Screen name="main" component={MainScreen} />
     </Stack.Navigator>
   )
 }
@@ -27,4 +26,4 @@ export function PrimaryNavigator() {
  * Anything not on this list will be a standard `back` action in
  * react-navigation.
  */
-export const exitRoutes: string[] = ["welcome"]
+export const exitRoutes: string[] = ["main"]
