@@ -120,5 +120,21 @@ export interface ListAnimeData {
   pagination: Pagination
 }
 
+export interface YoutubeEntry {
+  id: number,
+  title: string,
+  image: string,
+  vid: string,
+  views: number,
+  comments: number,
+  timestamp: number
+}
+
+export interface YoutubeData {
+  items: Array<YoutubeEntry>,
+  pagination: Pagination
+}
+
 export type GetConfigResult = { kind: "ok"; data: SiteConfig } | GeneralApiProblem
 export type GetListAnimeResult = { kind: "ok", data: ListAnimeData } | GeneralApiProblem
+export type GetYoutubeResult = { kind: "ok", data: YoutubeData } | GeneralApiProblem

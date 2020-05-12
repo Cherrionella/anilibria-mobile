@@ -18,3 +18,13 @@ test('Fetching anime list', async () => {
     expect(result.data.items.length).toEqual(10)
   }
 })
+
+test('Fetching youtube list', async () => {
+  const api = new Api()
+  api.setup()
+  const result = await api.getYoutube(1, 10)
+  expect(result.kind).toEqual("ok")
+  if (result.kind === "ok") {
+    expect(result.data.items.length).toEqual(10)
+  }
+})

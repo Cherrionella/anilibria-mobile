@@ -81,4 +81,15 @@ export class Api {
       return { kind: "bad-data" }
     }
   }
+
+  async getYoutube(page = 1, perPage: number = PER_PAGE): Promise<Types.GetYoutubeResult> {
+    const req = { query: 'youtube' }
+    // make the api call
+    const response: ApiResponse<any> = await this.apisauce.post('/index.php', serializeData(req))
+
+    const problem = detectApiProblem(response)
+    if (problem) return problem
+
+    return { kind: "ok", data: response.data.data }
+  }
 }
