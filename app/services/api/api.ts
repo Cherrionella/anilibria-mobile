@@ -1,7 +1,10 @@
-import { ApisauceInstance, create, ApiResponse } from "apisauce"
+import { ApisauceInstance, create, ApiResponse, ApisauceConfig } from "apisauce"
 import { getGeneralApiProblem } from "./api-problem"
 import { ApiConfig, DEFAULT_API_CONFIG } from "./api-config"
 import * as Types from "./api.types"
+import { serializeData } from "../../utils/serializeData"
+import { flatten, mergeAll } from "ramda"
+const { APP_ID, APP_VERSION } = require("../../config/env")
 
 /**
  * Manages all requests to the API.
@@ -33,15 +36,44 @@ export class Api {
    *
    * Be as quick as possible in here.
    */
-  setup() {
-    // construct the apisauce instance
-    this.apisauce = create({
+  setup(overrideConfig: Partial<ApisauceConfig> = {}) {
+    const baseConfig = {
       baseURL: this.config.url,
       timeout: this.config.timeout,
       headers: {
         Accept: "application/json",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "App-Id": APP_ID,
+        "Store-Published": "true",
+        "App-Ver-Name": "CUSTOM",
+        "App-Ver-Code": APP_VERSION
       },
-    })
+    }
+    const config = mergeAll(flatten([baseConfig, overrideConfig])) as ApisauceConfig
+    // construct the apisauce instance
+    this.apisauce = create(config)
+  }
+
+  async getConfig(): Promise<Types.GetConfigResult> {
+    // make the api call
+    const response: ApiResponse<any> = await this.apisauce.post('/index.php', serializeData({ query: 'config' }))
+
+    // the typical ways to die when calling an api
+    if (!response.ok) {
+      const problem = getGeneralApiProblem(response)
+      if (problem) return problem
+    }
+
+    if (!response.data.status) {
+      const problem = getGeneralApiProblem({
+        ...response,
+        status: response.data.error.code,
+        problem: "CLIENT_ERROR"
+      } as ApiResponse<any>)
+      if (problem) return problem
+    }
+
+    return { kind: "ok", data: response.data }
   }
 
   /**
