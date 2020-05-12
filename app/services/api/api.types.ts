@@ -1,10 +1,5 @@
 import { GeneralApiProblem } from "./api-problem"
 
-export interface User {
-  id: number
-  name: string
-}
-
 interface Address {
   tag: string,
   name: string,
@@ -127,5 +122,3 @@ export interface ListAnimeData {
 
 export type GetConfigResult = { kind: "ok"; data: SiteConfig } | GeneralApiProblem
 export type GetListAnimeResult = { kind: "ok", data: ListAnimeData } | GeneralApiProblem
-export type GetUsersResult = { kind: "ok"; users: User[] } | GeneralApiProblem
-export type GetUserResult = { kind: "ok"; user: User } | GeneralApiProblem
