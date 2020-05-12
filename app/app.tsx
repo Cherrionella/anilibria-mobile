@@ -4,7 +4,7 @@
 
 import "./i18n"
 import React, { useState, useEffect, useRef } from "react"
-import { YellowBox } from "react-native"
+import { YellowBox, Platform } from "react-native"
 import { NavigationContainerRef } from "@react-navigation/native"
 import { contains } from "ramda"
 import { enableScreens } from "react-native-screens"
@@ -65,10 +65,16 @@ const getRemoteConfig = async (defaults: Record<string, any> = {}) => {
   return configProps
 }
 
-const channels = {
-  staging: '',
-  stable: ''
-}
+const channels = Platform.select({
+  ios: {
+    staging: 'W5UiawkG_dK2thP6muc5LHekaxyWrlKc4fCp8',
+    stable: 'wARZsPJEdgQRuCSD8EjwJxmtIKH6eOpXA4gOE'
+  },
+  android: {
+    staging: '7fsZJLkYMsOoZ4puh4xdLOOZJ3yPdgYh0pFMn',
+    stable: '6BT2zvlS9D2-taI2j6U_9GxzfBmoO_n_Jtubc'
+  }
+})
 
 const selectChannel = (channel: keyof typeof channels) => {
   codePush.sync({ deploymentKey: channel })

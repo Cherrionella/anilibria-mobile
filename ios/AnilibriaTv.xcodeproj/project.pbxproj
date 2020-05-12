@@ -16,13 +16,13 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1790C951723E4E1986F6F927 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F873EEDD875442BD8B09099F /* Montserrat-Light.ttf */; };
 		19AC13D5E2720C7F5F566F4C /* libPods-AnilibriaTv-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 938106C3D60D41AFAC2E5BAC /* libPods-AnilibriaTv-tvOSTests.a */; };
-		1C80F8BDEAD32542D1487546 /* libPods-AnilibriaTvTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50D05373CC04EE1ECACFA9FD /* libPods-AnilibriaTvTests.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* AnilibriaTvTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AnilibriaTvTests.m */; };
 		362E9150436A4868B3D94E37 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAE0AB50404BC69A0BF97D /* Montserrat-ExtraLight.ttf */; };
 		3AC5782D0EE34EB8960EA3FC /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3459D11D9F374233A55A5E5A /* Montserrat-ExtraBoldItalic.ttf */; };
+		3D676BE6BD3B426F091F942D /* libPods-AnilibriaTv-AnilibriaTvTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6187AD0D71DC7336FBC5B6 /* libPods-AnilibriaTv-AnilibriaTvTests.a */; };
 		480A63F2EA0A45DA8ABEF461 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0DED90D90A044CA9AA790A8B /* Montserrat-Regular.ttf */; };
 		5D89E3BAFB18470983AED339 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36B4991BA7A1428EBE641E82 /* Montserrat-ExtraBold.ttf */; };
 		60DCE2F2100143DDAF95A60A /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7DAE0EA8287E4F04AA171A20 /* Montserrat-ExtraLightItalic.ttf */; };
@@ -36,6 +36,14 @@
 		B6A35D73C8E84972A225F44E /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51487F745E774AA890BC8CA7 /* Montserrat-Bold.ttf */; };
 		BFC9A929E988469F9C7D66D9 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9459B854E75A4F6CA84B0539 /* Montserrat-Thin.ttf */; };
 		C7937CD5869D431C93DABB81 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A694834264EAB85990350 /* Montserrat-MediumItalic.ttf */; };
+		D9A10DB4246AA75E008DC895 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A10DB3246AA75E008DC895 /* Dummy.swift */; };
+		D9A10DB5246AA75E008DC895 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A10DB3246AA75E008DC895 /* Dummy.swift */; };
+		D9A10DB6246AA75E008DC895 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A10DB3246AA75E008DC895 /* Dummy.swift */; };
+		D9A10DB7246AA75E008DC895 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A10DB3246AA75E008DC895 /* Dummy.swift */; };
+		D9A10DB9246AA7D4008DC895 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9A10DB8246AA7D4008DC895 /* GoogleService-Info.plist */; };
+		D9A10DBA246AA7D4008DC895 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9A10DB8246AA7D4008DC895 /* GoogleService-Info.plist */; };
+		D9A10DBB246AA7D4008DC895 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9A10DB8246AA7D4008DC895 /* GoogleService-Info.plist */; };
+		D9A10DBC246AA7D4008DC895 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9A10DB8246AA7D4008DC895 /* GoogleService-Info.plist */; };
 		E41E8F1D0207492F9881766E /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39F6A71F87744D7E8B8EA76E /* Montserrat-Medium.ttf */; };
 		FD4D0FBB1D3E4B94A7B04B71 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CF6A20615EF49D9B6D68001 /* Montserrat-LightItalic.ttf */; };
 /* End PBXBuildFile section */
@@ -63,6 +71,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* AnilibriaTvTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnilibriaTvTests.m; sourceTree = "<group>"; };
 		0A94B5206E06C7303E254B2B /* Pods-AnilibriaTv.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnilibriaTv.release.xcconfig"; path = "Target Support Files/Pods-AnilibriaTv/Pods-AnilibriaTv.release.xcconfig"; sourceTree = "<group>"; };
+		0D6187AD0D71DC7336FBC5B6 /* libPods-AnilibriaTv-AnilibriaTvTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnilibriaTv-AnilibriaTvTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DED90D90A044CA9AA790A8B /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../app/theme/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* AnilibriaTv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnilibriaTv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AnilibriaTv/AppDelegate.h; sourceTree = "<group>"; };
@@ -83,10 +92,10 @@
 		39F6A71F87744D7E8B8EA76E /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../app/theme/fonts/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		3B7A8D972D34E43FC6815866 /* libPods-AnilibriaTv.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnilibriaTv.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ADAE0AB50404BC69A0BF97D /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraLight.ttf"; path = "../app/theme/fonts/Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
-		50D05373CC04EE1ECACFA9FD /* libPods-AnilibriaTvTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnilibriaTvTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51487F745E774AA890BC8CA7 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../app/theme/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		5CF6A20615EF49D9B6D68001 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-LightItalic.ttf"; path = "../app/theme/fonts/Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
 		60668DA85BE2D7CDBD13F0CB /* Pods-AnilibriaTv-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnilibriaTv-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-AnilibriaTv-tvOSTests/Pods-AnilibriaTv-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		67A053B1DD8B1CF75E94FF02 /* Pods-AnilibriaTv-AnilibriaTvTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnilibriaTv-AnilibriaTvTests.debug.xcconfig"; path = "Target Support Files/Pods-AnilibriaTv-AnilibriaTvTests/Pods-AnilibriaTv-AnilibriaTvTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7580239B21384F77A96FA46A /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-BoldItalic.ttf"; path = "../app/theme/fonts/Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
 		7DAE0EA8287E4F04AA171A20 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ExtraLightItalic.ttf"; path = "../app/theme/fonts/Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		835F273CDBCB3538B754432F /* Pods-AnilibriaTvTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnilibriaTvTests.debug.xcconfig"; path = "Target Support Files/Pods-AnilibriaTvTests/Pods-AnilibriaTvTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,8 +106,15 @@
 		AA4BE5D1A237417DA64935E9 /* Pods-AnilibriaTvTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnilibriaTvTests.release.xcconfig"; path = "Target Support Files/Pods-AnilibriaTvTests/Pods-AnilibriaTvTests.release.xcconfig"; sourceTree = "<group>"; };
 		AA9AC6CF5431483D84C133A3 /* Pods-AnilibriaTv.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnilibriaTv.debug.xcconfig"; path = "Target Support Files/Pods-AnilibriaTv/Pods-AnilibriaTv.debug.xcconfig"; sourceTree = "<group>"; };
 		D4BF3E1BD3104E5D988142FC /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-SemiBoldItalic.ttf"; path = "../app/theme/fonts/Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		D9A10DAF246AA75E008DC895 /* AnilibriaTv-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnilibriaTv-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9A10DB0246AA75E008DC895 /* AnilibriaTvTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnilibriaTvTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9A10DB1246AA75E008DC895 /* AnilibriaTv-tvOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnilibriaTv-tvOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9A10DB2246AA75E008DC895 /* AnilibriaTv-tvOSTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnilibriaTv-tvOSTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9A10DB3246AA75E008DC895 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		D9A10DB8246AA7D4008DC895 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E0FBD013E5054F0E8FA909E0 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Black.ttf"; path = "../app/theme/fonts/Montserrat-Black.ttf"; sourceTree = "<group>"; };
 		E6410F88ED4BA71866F4F7B5 /* libPods-AnilibriaTv-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnilibriaTv-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B803FB911144EB1F90614B /* Pods-AnilibriaTv-AnilibriaTvTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnilibriaTv-AnilibriaTvTests.release.xcconfig"; path = "Target Support Files/Pods-AnilibriaTv-AnilibriaTvTests/Pods-AnilibriaTv-AnilibriaTvTests.release.xcconfig"; sourceTree = "<group>"; };
 		EB6F3FA1200A4FB6A9150F65 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-ThinItalic.ttf"; path = "../app/theme/fonts/Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -110,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C80F8BDEAD32542D1487546 /* libPods-AnilibriaTvTests.a in Frameworks */,
+				3D676BE6BD3B426F091F942D /* libPods-AnilibriaTv-AnilibriaTvTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +177,7 @@
 		13B07FAE1A68108700A75B9A /* AnilibriaTv */ = {
 			isa = PBXGroup;
 			children = (
+				D9A10DB8246AA7D4008DC895 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -168,6 +185,11 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				D9A10DB3246AA75E008DC895 /* Dummy.swift */,
+				D9A10DAF246AA75E008DC895 /* AnilibriaTv-Bridging-Header.h */,
+				D9A10DB0246AA75E008DC895 /* AnilibriaTvTests-Bridging-Header.h */,
+				D9A10DB1246AA75E008DC895 /* AnilibriaTv-tvOS-Bridging-Header.h */,
+				D9A10DB2246AA75E008DC895 /* AnilibriaTv-tvOSTests-Bridging-Header.h */,
 			);
 			name = AnilibriaTv;
 			sourceTree = "<group>";
@@ -208,6 +230,8 @@
 				60668DA85BE2D7CDBD13F0CB /* Pods-AnilibriaTv-tvOSTests.release.xcconfig */,
 				835F273CDBCB3538B754432F /* Pods-AnilibriaTvTests.debug.xcconfig */,
 				AA4BE5D1A237417DA64935E9 /* Pods-AnilibriaTvTests.release.xcconfig */,
+				67A053B1DD8B1CF75E94FF02 /* Pods-AnilibriaTv-AnilibriaTvTests.debug.xcconfig */,
+				E9B803FB911144EB1F90614B /* Pods-AnilibriaTv-AnilibriaTvTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -220,7 +244,7 @@
 				3B7A8D972D34E43FC6815866 /* libPods-AnilibriaTv.a */,
 				E6410F88ED4BA71866F4F7B5 /* libPods-AnilibriaTv-tvOS.a */,
 				938106C3D60D41AFAC2E5BAC /* libPods-AnilibriaTv-tvOSTests.a */,
-				50D05373CC04EE1ECACFA9FD /* libPods-AnilibriaTvTests.a */,
+				0D6187AD0D71DC7336FBC5B6 /* libPods-AnilibriaTv-AnilibriaTvTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -353,17 +377,21 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 1130;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = 7H77739CNM;
+						LastSwiftMigration = 1130;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
 					};
@@ -396,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A10DBA246AA7D4008DC895 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +452,7 @@
 				A328F6AE55C345F29AE6C188 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				BFC9A929E988469F9C7D66D9 /* Montserrat-Thin.ttf in Resources */,
 				0C5F30E8167C4AF88FDA1705 /* Montserrat-ThinItalic.ttf in Resources */,
+				D9A10DB9246AA7D4008DC895 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */,
+				D9A10DBB246AA7D4008DC895 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +469,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A10DBC246AA7D4008DC895 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +519,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AnilibriaTvTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AnilibriaTv-AnilibriaTvTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -625,6 +657,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A10DB5246AA75E008DC895 /* Dummy.swift in Sources */,
 				00E356F31AD99517003FC87E /* AnilibriaTvTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -634,6 +667,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				D9A10DB4246AA75E008DC895 /* Dummy.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -643,6 +677,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */,
+				D9A10DB6246AA75E008DC895 /* Dummy.swift in Sources */,
 				2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,6 +686,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A10DB7246AA75E008DC895 /* Dummy.swift in Sources */,
 				2DCD954D1E0B4F2C00145EB5 /* AnilibriaTvTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,9 +721,11 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 835F273CDBCB3538B754432F /* Pods-AnilibriaTvTests.debug.xcconfig */;
+			baseConfigurationReference = 67A053B1DD8B1CF75E94FF02 /* Pods-AnilibriaTv-AnilibriaTvTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -695,6 +733,10 @@
 				INFOPLIST_FILE = AnilibriaTvTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -702,19 +744,28 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnilibriaTvTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnilibriaTv.app/AnilibriaTv";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA4BE5D1A237417DA64935E9 /* Pods-AnilibriaTvTests.release.xcconfig */;
+			baseConfigurationReference = E9B803FB911144EB1F90614B /* Pods-AnilibriaTv-AnilibriaTvTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = AnilibriaTvTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -722,6 +773,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnilibriaTvTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnilibriaTv.app/AnilibriaTv";
 			};
 			name = Release;
@@ -731,13 +784,19 @@
 			baseConfigurationReference = AA9AC6CF5431483D84C133A3 /* Pods-AnilibriaTv.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 7H77739CNM;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AnilibriaTv/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.1;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -745,6 +804,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tv.anilibria;
 				PRODUCT_NAME = AnilibriaTv;
+				SWIFT_OBJC_BRIDGING_HEADER = "AnilibriaTv-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -755,12 +817,18 @@
 			baseConfigurationReference = 0A94B5206E06C7303E254B2B /* Pods-AnilibriaTv.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7H77739CNM;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AnilibriaTv/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.1;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -768,6 +836,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tv.anilibria;
 				PRODUCT_NAME = AnilibriaTv;
+				SWIFT_OBJC_BRIDGING_HEADER = "AnilibriaTv-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -780,6 +850,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -788,6 +859,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "AnilibriaTv-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -796,6 +871,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.AnilibriaTv-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "AnilibriaTv-tvOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -808,6 +886,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -816,6 +895,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "AnilibriaTv-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -824,6 +907,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.AnilibriaTv-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "AnilibriaTv-tvOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
@@ -833,8 +918,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E6704BEAF9A14FEC511102C /* Pods-AnilibriaTv-tvOSTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -843,6 +930,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "AnilibriaTv-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -851,6 +942,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.AnilibriaTv-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "AnilibriaTv-tvOSTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnilibriaTv-tvOS.app/AnilibriaTv-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
@@ -860,8 +954,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 60668DA85BE2D7CDBD13F0CB /* Pods-AnilibriaTv-tvOSTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -870,6 +966,10 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "AnilibriaTv-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DFB_SONARKIT_ENABLED=1",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -878,6 +978,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.AnilibriaTv-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "AnilibriaTv-tvOSTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnilibriaTv-tvOS.app/AnilibriaTv-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};

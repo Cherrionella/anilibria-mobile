@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AnilibriaTv</string>
+    <string moduleConfig="true" name="CodePushDeploymentKey">6BT2zvlS9D2-taI2j6U_9GxzfBmoO_n_Jtubc</string>
 </resources>
